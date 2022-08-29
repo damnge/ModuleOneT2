@@ -81,7 +81,7 @@ main section {
     max-width: 1080px;
 }
 
-// Image outside of the grid which is positioned by absolute property it's on the top of the other photos.
+// Image outside of the grid which is positioned by absolute property according to the positon of parent element it's on the top of the other photos.
 // Photo transforms with the scale property on mouse hover
 .center-img {
     max-width:365px;
