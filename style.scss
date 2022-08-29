@@ -70,6 +70,7 @@ main {
    max-width: 1080px;
    border-right: 2px solid whitesmoke;
    border-left: 2px solid whitesmoke;
+   position: relative;
 }
 // wrapping section of gallery displayed in CSS grid, simple 3 centered columns that take even amount of space with a little bit of a gap between photos
 main section {
@@ -84,10 +85,11 @@ main section {
 // Photo transforms with the scale property on mouse hover
 .center-img {
     max-width:365px;
-    position: absolute; 
-    left: 0; right: 0; 
-    top: 71%; 
-    bottom: 0; 
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
     transition: transform .5s;
 }

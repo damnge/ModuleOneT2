@@ -63,6 +63,7 @@ main {
   max-width: 1080px;
   border-right: 2px solid whitesmoke;
   border-left: 2px solid whitesmoke;
+  position: relative;
 }
 
 main section {
@@ -76,9 +77,9 @@ main section {
 .center-img {
   max-width: 365px;
   position: absolute;
-  left: 0;
   right: 0;
-  top: 71%;
+  left: 0;
+  top: 0;
   bottom: 0;
   margin: auto;
   transition: transform 0.5s;
