@@ -1,0 +1,116 @@
+// IMPORTING FONT FROM GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$font-text:'Encode Sans', sans-serif;
+
+// CREATING PROPERTIS AND VALUES FOR THE BASE TAGS
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background: white;
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
+  }
+
+h1, h2, h3, h4, h5 {
+    font-family:$font-text;
+    color: rgb(148, 148, 148);
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+// setting the max width for the logo
+.logo {
+    max-width: 900px;
+}
+
+// header displayed in flex, set the direction to the collumn aligned and centered
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header div {
+    margin: 10px;
+}
+// Wraping container for the names of the actors displeyd in flex to organized and space around the names in the row
+.actor-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    border-top: 2px solid whitesmoke;
+}
+
+.actor-name {
+    padding: 10px;
+}
+
+.actor-name h1 {
+    font-size: 27px;
+    text-align: center;
+}
+
+// main content of the body with gallery
+main {
+   margin: 0 auto;
+   max-width: 1080px;
+   border-right: 2px solid whitesmoke;
+   border-left: 2px solid whitesmoke;
+}
+// wrapping section of gallery displayed in CSS grid, simple 3 centered columns that take even amount of space with a little bit of a gap between photos
+main section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    max-width: 1080px;
+}
+
+// Image outside of the grid which is positioned by absolute property it's on the top of the other photos.
+// Photo transforms with the scale property on mouse hover
+.center-img {
+    max-width:365px;
+    position: absolute; 
+    left: 0; right: 0; 
+    top: 71%; 
+    bottom: 0; 
+    margin: auto;
+    transition: transform .5s;
+}
+
+.center-img:hover{
+    transform: scale(1.25);
+}
+
+section img{ 
+    width:350px;
+    height: 350px;
+}
+
+// Simple style footer with subtitle
+footer {
+    border: 2px solid whitesmoke;
+    max-width: 1080px;
+    height: 200px;
+    margin: 0 auto;
+    
+}
+
+.sub-title {
+    text-align: center;
+    padding-top:40px;
+}
